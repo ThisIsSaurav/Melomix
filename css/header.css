@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --web-bg-color : #292929;
+    --web-yellow : #ffff9c;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+body {
+    background-color: black;
+}
+
+header {
+    /* border: 1px solid green; */
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 85vw;
+    padding: 8px;
+    margin: auto;
+    background-color: var(--web-bg-color);
+    border-radius: 15px;
+}
+
+header nav ul {
+    display: flex;
+    /* border : 1px solid blue; */
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 5px 15px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--web-yellow);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+header nav ul li a:hover{
+    color: white;
+}
+
+header nav ul li a h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+    /* font-style: normal; */
+}

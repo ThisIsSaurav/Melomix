@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melomix</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><h1>Melomix</h1></a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="left-main-box">
+            <div class="search-section">
+                <input type="search" name="songSeach" placeholder="Search your song...." id="searchBox"><button id="searchBtn"><img src="icon/search-line-icon.webp" alt=""  width = "15"></button>
+            </div>
+            <div id="album-heading">Your's Albums</div>
+            <!-- HERE IS ALBUM CARD SECTION  -->
+            <div class="album-section" id="album-section"></div>
+                <!------------------------------------->
+
+        </div>
+        <div class="right-main-box">
+            <div id="album-heading" class="p-0">Album</div>
+            <div id="right-side-album-name">Unknown</div>
+            <div id="r_album-songs-count">Total Song - 00</div>
+
+            <!-- HERE IS SONG CARD SECTION  -->
+            <div class="album-songs" id="album-songs"></div>
+            <!-- ................................  -->
+
+            <div class="player-controller" id="player-controller">
+               <div><input type="range" id="slider" name="timeBar" min="0" max="100"></div>
+               <div class="player">
+                    <div id="songName"><marquee direction="left"></marquee></div>
+                    <div class="player-control">
+                        <button id="previusBtn"><img src="icon/backward-icon.png" alt=""></button>
+                        <button id="playBtn" class="display-none"><img src="icon/play-icon.webp" alt=""></button>
+                        <button  id="pauseBtn"><img src="icon/pause-icon.webp" alt=""></button>
+                        <button id="nextBtn"><img src="icon/backward-icon.png" alt="" style="transform: rotate(180deg);"></button>
+                    </div>
+                    <div id="timer">00:00/00:00</div>
+               </div>
+            </div>
+        </div>
+    </main>
+<script src="js/main.js"></script>
+</body>
+</html>

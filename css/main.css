@@ -1,0 +1,299 @@
+/* This is utility class for making padding 0px  */
+.p-0{
+    padding: 0px !important;
+}
+.display-none{
+    display: none !important;
+}
+
+
+
+/* BELOW CSS FOR MAIN SECTION  */
+main{
+    color: white;
+    width: 85vw;
+    /* border : 1px solid red; */
+    margin: auto;
+    display: flex;
+    background-color: var(--web-bg-color);
+    border-radius: 15px;
+    padding: 0px 8px;
+}
+
+/* BELOW CSS IS FOR LEFT PART OF MAIN SECTION (SEARCH AND ALBUM SECTION)  */
+.left-main-box{
+    width: 35%;
+    /* border : 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-bottom: none; */
+    padding: 5px;
+}
+
+/* BELOW CSS IS FOR SEARCH SECTION INSIDE LEFT SECTION OF MAIN SECTION  */
+.search-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.search-section button{
+    height: 30px;
+    padding: 0px 8px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.search-section input{
+    width: 85%;
+    height: 30px;
+    padding: 0px 5px;
+    background-color: var(--web-bg-color);
+    border: 1px solid white;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+    color: white;
+}
+
+/* BELOW CSS IS FOR ALBUM SECTION INSIDE LEFT SECTION OF MAIN SECTION  */
+
+.album-section{
+    /* border : 1px solid red; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 64vh;
+    overflow: auto;
+}
+
+#album-heading{
+    padding: 3px 0px 3px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: var(--web-yellow);
+}
+
+/* BELOW CSS ALBUM CARD INSIDE ALL THE ALBUM SECTION  */
+.album{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    background-color: #414141;
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.album:hover{
+    background-color: #565656;
+}
+.album span{
+    border : 1px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} 
+.album span img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+} 
+
+.album-details{
+    /* border : 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#album-name{
+    font-size: 23px;
+    font-family: sans-serif;
+}
+#l_album-songs-count{
+    color: #989898;
+    font-size: 12px;
+}
+
+.album button{
+    padding: 6px;
+    border-radius: 50%;
+    background-color: var(--web-yellow);
+    border : 1px solid white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+.album button img{
+    width: 15px;
+    height: 15%;
+}
+
+/* BELOW CSS IS FOR RIGTH PART OF MAIN SECTION (SEARCH AND ALBUM SECTION)  */
+
+.right-main-box{
+    /* border : 1px solid white; */
+    width: 65%;
+    padding: 5px;
+}
+
+
+#right-side-album-name{
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+#r_album-songs-count{
+    color: #989898;
+    font-size: 12px;
+}
+
+
+
+/* BELOW CSS IS FOR AlBUM SONG AND SONG CARD RIGTH PART OF MAIN SECTION (SEARCH AND ALBUM SECTION)  */
+.album-songs{
+    border : 1px solid grey;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 50vh;
+    overflow: auto;
+}
+
+/* BELOW CSS IS FOR AlBUM SONG CARD AND SONG CARD RIGTH PART OF MAIN SECTION (SEARCH AND ALBUM SECTION)  */
+.album-song{
+    border : 1px solid grey;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: relative;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    /* justify-content: center; */
+}
+
+.album-songs span{
+    /* border : 1px solid red; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.song-details{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#song-name{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#song-duration{
+    color: #989898;
+    position: absolute;
+    right: 50px;
+}
+.song-details button{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+.song-details button img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* BELOW CSS IS FOR SONG CONTROL LIKE PLAY PAUSE SECTION AND SONG CARD RIGTH PART OF MAIN SECTION (SEARCH AND ALBUM SECTION)  */
+.player{
+    position: relative;
+}
+.player #songName{
+    width: 150px;
+}
+.player-controller{
+    border : 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+    padding: 10px 10px;
+    border-radius: 12px;
+    background-color: var(--web-bg-color);
+}
+
+#slider{
+    width: 100%;
+    height: 10px;
+    /* transition: all 0.3s ease; */
+    outline: none;
+    transition: width 0.3s ease-in-out; 
+    cursor: pointer;
+}
+
+
+#slider[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+}
+
+.player-controller .player{
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-control{
+    display: flex;
+    /* border : 1px solid red; */
+    gap: 8px;
+
+}
+
+.player-control button{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.player-control button img{
+    width: 10px;
+}
+
+
+
+
+.search-results {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: #212121;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: auto;
+  }
