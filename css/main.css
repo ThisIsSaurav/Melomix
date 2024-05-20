@@ -15,6 +15,7 @@ main{
     /* border : 1px solid red; */
     margin: auto;
     display: flex;
+    justify-content: center;
     background-color: var(--web-bg-color);
     border-radius: 15px;
     padding: 0px 8px;

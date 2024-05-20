@@ -27,7 +27,7 @@ header nav {
     width: 85vw;
     padding: 8px;
     margin: auto;
-    background-color: var(--web-bg-color);
+    /* background-color: var(--web-bg-color); */
     border-radius: 15px;
 }
 
@@ -38,7 +38,7 @@ header nav ul {
 
 header nav ul li {
     list-style: none;
-    padding: 5px 15px;
+    /* padding: 5px 15px; */
 }
 
 header nav ul li a{

@@ -1,15 +1,47 @@
+// Get the element with the id "album-songs" and store it in the variable 'album_songs'
+// This element is used to display the list of songs in a specific album
 const album_songs = document.getElementById("album-songs")
+
+// Get the element with the id "album-section" and store it in the variable 'album_section'
+// This element is used to display the list of available albums
 const album_section = document.getElementById("album-section")
+
+// Get the element with the id "songName" and then the first "marquee" element inside it
+// This element is used to display the name of the currently playing song
 const songName = document.getElementById("songName").querySelector("marquee")
+
+// Get the element with the id "timer" and store it in the variable 'playerTimer'
+// This element is used to display the current time and duration of the playing song
 const playerTimer = document.getElementById("timer")
+
+// Get the element with the id "slider" and store it in the variable 'playerBar'
+ // This element is used to display the progress bar of the playing song
 const playerBar = document.getElementById("slider")
+
+// Get the element with the id "right-side-album-name" and store it in the variable 'album_name'
+ // This element is used to display the name of the currently playing album
 const album_name = document.getElementById("right-side-album-name")
+
+// Get the element with the id "r_album-songs-count" and store it in the variable 'r_album_songs_count'
+ // This element is used to display the number of songs in the currently playing album
 const r_album_songs_count = document.getElementById("r_album-songs-count")
+
+// Get the element with the id "l_album-songs-count" and store it in the variable 'l_album_songs_count'
+// This element is used to display the number of songs in the currently playing album
 const l_album_songs_count = document.getElementById("l_album-songs-count")
+
+
+// Get the element with the id "player-controller" and store it in the variable 'player_controller'
+ // This element is used to display the current time and duration of the playing song
 const player_controller = document.getElementById("player-controller")
+
+
+
+
 
 // variable for next button
 let songArray = [];
+
 
 
 //Hide the music controller
@@ -115,7 +147,7 @@ async function main1(folder) {
             <div class="song-details">
             <div id="song-name">${song.title.replace("320 Kbps.mp3", "")}</div>
             <div id="song-duration">${duration}</div>
-            <button><img src="icon/play-round-icon.webp" alt=""></button>
+            <button id="song-side-play-btn"><img src="icon/play-round-icon.webp" alt=""></button>
             </div>
             </div>`;
 
@@ -172,18 +204,18 @@ async function folder(albumID) {
 //SCRIPT FOR MAKING A PLAY SYSTEM (ACTIVE THE PLAY BUTTON IN THE SONG CARD)
 async function play(songID) {
 
-   
     //Show the music controller
     player_controller.style.display = "flex"
-
+    
     // adjust the height of the sons section 
     album_songs.style.height = "50vh"
-
+    
     // Create a new audio element for the selected song
     let song = new Audio(songID);
-
+    
     // Pause the currently playing song if there is one
     if (current_song) {
+
         current_song.pause();
     }
 
@@ -192,6 +224,8 @@ async function play(songID) {
 
     // Change the song name in music controller 
     songName.innerHTML = document.getElementById(`${songID}`).querySelector("#song-name").innerHTML;
+
+
 
 
     // Update the player timer with the current time and duration
@@ -326,7 +360,6 @@ previousBtn.addEventListener('click', function(){
     }
 });
 
-// http://127.0.0.1:5500/albums/Saurav/Gali%20Gali%20Kgf%20Chapter%201%20320%20Kbps.mp3
-// /albums/Nora%20Fetehi/Dilbar%20Arabic%20Nora%20Fatehi%20320%20Kbps.mp3"
+
 
 
